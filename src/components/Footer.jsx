@@ -50,7 +50,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h4 className="text-white font-bold tracking-wide">Mail us</h4>
-                            <p className="text-gray-500 text-sm mt-1">creovatehub.desgin@gmail.com</p>
+                            <p className="text-gray-500 text-sm mt-1">creovatehub.design@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ const Footer = () => {
                             onClick={() => {
                                 const email = document.getElementById('footer-subscribe-email').value;
                                 if (email) {
-                                    window.location.href = `mailto:creovatehub.desgin@gmail.com?subject=Newsletter Subscription&body=I would like to subscribe with: ${email}`;
+                                    window.location.href = `mailto:creovatehub.design@gmail.com?subject=Newsletter Subscription&body=I would like to subscribe with: ${email}`;
                                 }
                             }}
                             className="absolute right-2 top-2 bottom-2 w-12 bg-primary hover:bg-white text-black rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-105 active:scale-95"

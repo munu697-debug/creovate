@@ -7,7 +7,7 @@ const Contact = () => {
         {
             icon: <Mail className="w-6 h-6" />,
             title: "Email us",
-            value: "creovatehub.desgin@gmail.com",
+            value: "creovatehub.design@gmail.com",
         },
         {
             icon: <Phone className="w-6 h-6" />,
@@ -36,7 +36,7 @@ const Contact = () => {
         // Trigger mailto
         const subject = encodeURIComponent(`New Inquiry from ${formData.name}`);
         const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
-        window.location.href = `mailto:creovatehub.desgin@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:creovatehub.design@gmail.com?subject=${subject}&body=${body}`;
 
         setFormData({ name: '', email: '', message: '' });
         setStatus('Message sent successfully!');
