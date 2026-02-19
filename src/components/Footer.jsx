@@ -70,14 +70,21 @@ const Footer = () => {
                     <div className="space-y-4">
                         <h4 className="text-white font-bold text-lg border-l-4 border-primary pl-4">Follow us</h4>
                         <div className="flex gap-4">
-                            {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
+                            {[
+                                { Icon: Facebook, href: "#" },
+                                { Icon: Twitter, href: "#" },
+                                { Icon: Instagram, href: "https://www.instagram.com/creovatehub_design/" },
+                                { Icon: Linkedin, href: "#" }
+                            ].map((social, i) => (
                                 <motion.a
                                     key={i}
-                                    href="#"
+                                    href={social.href}
+                                    target={social.href !== "#" ? "_blank" : undefined}
+                                    rel={social.href !== "#" ? "noopener noreferrer" : undefined}
                                     whileHover={{ y: -5, scale: 1.1 }}
                                     className="w-10 h-10 bg-white/5 hover:bg-primary rounded-full flex items-center justify-center text-gray-400 hover:text-black transition-all duration-300"
                                 >
-                                    <Icon size={18} />
+                                    <social.Icon size={18} />
                                 </motion.a>
                             ))}
                         </div>
