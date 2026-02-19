@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { LayoutDashboard, FolderKanban, Mail, Settings, Plus, LogOut, Save, Trash2, ExternalLink } from 'lucide-react';
 
