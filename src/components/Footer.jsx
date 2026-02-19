@@ -74,7 +74,7 @@ const Footer = () => {
                                 { Icon: Facebook, href: "#" },
                                 { Icon: Twitter, href: "#" },
                                 { Icon: Instagram, href: "https://www.instagram.com/creovatehub_design/" },
-                                { Icon: Linkedin, href: "#" }
+                                { Icon: Linkedin, href: "https://www.linkedin.com/in/munavvir-m-kuttimon-25b899364" }
                             ].map((social, i) => (
                                 <motion.a
                                     key={i}
